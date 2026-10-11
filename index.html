@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A modern personal website with a polished layout, services, portfolio highlights, and contact section."
+      content="GitHub-style portfolio for Alok, a full-stack developer building clean and scalable products."
     />
-    <title>Alok Creative Studio</title>
+    <title>Alok Pandey | GitHub Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,9 +19,9 @@
   <body>
     <header class="site-header">
       <div class="container nav-wrap">
-        <a href="#home" class="brand" aria-label="Alok Creative Studio home">
+        <a href="#home" class="brand" aria-label="Alok portfolio home">
           <span class="brand-mark">A</span>
-          <span>Alok Creative</span>
+          <span>alok pandey</span>
         </a>
 
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -31,192 +31,195 @@
         </button>
 
         <nav class="main-nav" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#work">Work</a>
-          <a href="#testimonials">Reviews</a>
+          <a href="#overview">Overview</a>
+          <a href="#projects">Projects</a>
+          <a href="#activity">Activity</a>
           <a href="#contact">Contact</a>
         </nav>
+
+        <a class="btn btn-primary header-btn" href="#contact">Hire me</a>
       </div>
     </header>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Design • Development • Growth</p>
-            <h1>We build elegant digital experiences that move brands forward.</h1>
-            <p class="lead">
-              From strategy to launch, we help startups, creators, and businesses create a stronger
-              online presence with thoughtful design and high-performing websites.
+    <main class="container page-shell">
+      <section class="profile-header" id="overview">
+        <div class="profile-meta">
+          <div class="avatar-wrap">
+            <div class="avatar">A</div>
+          </div>
+          <div class="profile-copy">
+            <p class="eyebrow">Full-stack developer</p>
+            <h1>Alok Pandey</h1>
+            <p class="bio">
+              I build thoughtful interfaces and reliable systems for products that need to move fast and feel polished.
             </p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="#contact">Book a Call</a>
-              <a class="btn btn-secondary" href="#work">View Projects</a>
+            <div class="social-row">
+              <a href="https://github.com/pandeyshivam4737-a11y" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="#">LinkedIn</a>
+              <a href="#">Email</a>
             </div>
-            <ul class="hero-metrics" aria-label="Business achievements">
-              <li><strong>5+</strong><span>Years Experience</span></li>
-              <li><strong>40+</strong><span>Projects Delivered</span></li>
-              <li><strong>98%</strong><span>Client Satisfaction</span></li>
+          </div>
+        </div>
+
+        <div class="stats-panel">
+          <div class="stat-box">
+            <strong>5+</strong>
+            <span>Years building</span>
+          </div>
+          <div class="stat-box">
+            <strong>40+</strong>
+            <span>Projects shipped</span>
+          </div>
+          <div class="stat-box">
+            <strong>120+</strong>
+            <span>Commits</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlight-strip">
+        <div class="chip active">Open to work</div>
+        <div class="chip">JavaScript</div>
+        <div class="chip">Python</div>
+        <div class="chip">React</div>
+        <div class="chip">Node</div>
+        <div class="chip">UI/UX</div>
+      </section>
+
+      <section class="repo-section" id="projects">
+        <div class="section-head">
+          <h2>Pinned repositories</h2>
+        </div>
+
+        <div class="repo-grid">
+          <article class="repo-card">
+            <div class="repo-top">
+              <span class="repo-name">codevault</span>
+              <span class="repo-flag">Public</span>
+            </div>
+            <p>Collaborative code-snippet manager with tagging, quick search, and team sharing workflows.</p>
+            <div class="repo-meta">
+              <span class="lang"><i class="dot js"></i>JavaScript</span>
+              <span>★ 128</span>
+              <span>Forks 42</span>
+            </div>
+          </article>
+
+          <article class="repo-card">
+            <div class="repo-top">
+              <span class="repo-name">pulseboard</span>
+              <span class="repo-flag">Public</span>
+            </div>
+            <p>Live analytics dashboard for product metrics, funnel tracking, and growth reporting.</p>
+            <div class="repo-meta">
+              <span class="lang"><i class="dot ts"></i>TypeScript</span>
+              <span>★ 94</span>
+              <span>Forks 28</span>
+            </div>
+          </article>
+
+          <article class="repo-card">
+            <div class="repo-top">
+              <span class="repo-name">shopflow</span>
+              <span class="repo-flag">Public</span>
+            </div>
+            <p>Modern storefront UI with smart UX flows, checkout optimization, and reusable components.</p>
+            <div class="repo-meta">
+              <span class="lang"><i class="dot react"></i>React</span>
+              <span>★ 211</span>
+              <span>Forks 66</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="activity-panel" id="activity">
+        <div class="section-head">
+          <h2>Contribution activity</h2>
+        </div>
+
+        <div class="activity-grid">
+          <div class="graph-panel">
+            <div class="chart-header">
+              <span>Last 30 days</span>
+              <span>328 contributions</span>
+            </div>
+            <div class="heatmap" aria-label="Contribution heatmap">
+              <span class="level-0"></span>
+              <span class="level-1"></span>
+              <span class="level-2"></span>
+              <span class="level-3"></span>
+              <span class="level-4"></span>
+              <span class="level-0"></span>
+              <span class="level-1"></span>
+              <span class="level-2"></span>
+              <span class="level-3"></span>
+              <span class="level-0"></span>
+              <span class="level-2"></span>
+              <span class="level-1"></span>
+              <span class="level-4"></span>
+              <span class="level-3"></span>
+              <span class="level-2"></span>
+              <span class="level-0"></span>
+              <span class="level-1"></span>
+              <span class="level-3"></span>
+              <span class="level-2"></span>
+              <span class="level-4"></span>
+              <span class="level-1"></span>
+              <span class="level-2"></span>
+              <span class="level-0"></span>
+              <span class="level-3"></span>
+              <span class="level-2"></span>
+              <span class="level-4"></span>
+              <span class="level-1"></span>
+              <span class="level-2"></span>
+              <span class="level-0"></span>
+              <span class="level-3"></span>
+              <span class="level-2"></span>
+              <span class="level-1"></span>
+              <span class="level-4"></span>
+              <span class="level-0"></span>
+              <span class="level-2"></span>
+              <span class="level-3"></span>
+              <span class="level-1"></span>
+              <span class="level-4"></span>
+              <span class="level-1"></span>
+              <span class="level-2"></span>
+              <span class="level-0"></span>
+              <span class="level-3"></span>
+              <span class="level-2"></span>
+              <span class="level-4"></span>
+              <span class="level-1"></span>
+              <span class="level-3"></span>
+              <span class="level-2"></span>
+              <span class="level-0"></span>
+              <span class="level-1"></span>
+              <span class="level-2"></span>
+              <span class="level-3"></span>
+              <span class="level-4"></span>
+              <span class="level-0"></span>
+              <span class="level-1"></span>
+              <span class="level-2"></span>
+              <span class="level-3"></span>
+            </div>
+          </div>
+
+          <div class="info-panel">
+            <h3>Focus areas</h3>
+            <ul>
+              <li>Frontend architecture and UI performance</li>
+              <li>Python automation and backend workflows</li>
+              <li>Product design systems and ownership</li>
             </ul>
           </div>
-
-          <div class="hero-visual" aria-label="Featured project preview">
-            <div class="window-card">
-              <div class="window-bar">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-              </div>
-              <div class="dashboard">
-                <div class="side-panel">
-                  <div class="mini-card active"></div>
-                  <div class="mini-card"></div>
-                  <div class="mini-card"></div>
-                </div>
-                <div class="main-panel">
-                  <div class="chart-bars">
-                    <span style="height: 26%"></span>
-                    <span style="height: 44%"></span>
-                    <span style="height: 60%"></span>
-                    <span style="height: 78%"></span>
-                    <span style="height: 95%"></span>
-                    <span style="height: 72%"></span>
-                  </div>
-                  <div class="stat-row">
-                    <div>
-                      <small>Engagement</small>
-                      <strong>+42%</strong>
-                    </div>
-                    <div>
-                      <small>Sales</small>
-                      <strong>+18%</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
-      <section class="logo-strip" aria-label="Trusted clients and brands">
-        <div class="container logo-row">
-          <span>Nova</span>
-          <span>PixelNest</span>
-          <span>Northstar</span>
-          <span>Blueprint</span>
-          <span>Vantage</span>
-        </div>
-      </section>
-
-      <section class="section" id="about">
-        <div class="container intro-block">
-          <div class="section-heading">
-            <p class="eyebrow">Why choose us</p>
-            <h2>Creative thinking paired with measurable business outcomes.</h2>
-          </div>
-          <p>
-            We blend strategy, branding, and web development into a seamless process that gives your
-            business a digital experience people remember. Every layout, interaction, and conversion
-            point is designed to feel premium and perform with purpose.
-          </p>
-        </div>
-      </section>
-
-      <section class="section muted" id="services">
-        <div class="container">
-          <div class="section-heading center">
-            <p class="eyebrow">Services</p>
-            <h2>Everything your brand needs to stand out online.</h2>
-          </div>
-
-          <div class="card-grid">
-            <article class="info-card">
-              <div class="icon-wrap">01</div>
-              <h3>Brand Identity</h3>
-              <p>Positioning, messaging, and visual direction that give your company a clear voice.</p>
-            </article>
-            <article class="info-card">
-              <div class="icon-wrap">02</div>
-              <h3>Website Design</h3>
-              <p>Conversion-focused websites that look polished, load quickly, and guide users naturally.</p>
-            </article>
-            <article class="info-card">
-              <div class="icon-wrap">03</div>
-              <h3>Web Development</h3>
-              <p>Responsive builds with clean code, user-friendly interactions, and strong performance.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="work">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Selected work</p>
-            <h2>Projects designed to convert attention into action.</h2>
-          </div>
-
-          <div class="project-grid">
-            <article class="project-card project-one">
-              <div class="project-content">
-                <span>Brand Launch</span>
-                <h3>Northstar Studio</h3>
-                <p>Refined storytelling and a conversion-optimized site for a modern creative agency.</p>
-              </div>
-            </article>
-            <article class="project-card project-two">
-              <div class="project-content">
-                <span>Ecommerce</span>
-                <h3>Vanta Goods</h3>
-                <p>Modern storefront experience built to showcase premium products and increase sales.</p>
-              </div>
-            </article>
-            <article class="project-card project-three">
-              <div class="project-content">
-                <span>SaaS</span>
-                <h3>SignalFlow</h3>
-                <p>Dashboard-first marketing site designed to simplify complex product benefits.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section muted" id="testimonials">
-        <div class="container">
-          <div class="section-heading center">
-            <p class="eyebrow">Client feedback</p>
-            <h2>Trusted by founders and growing businesses.</h2>
-          </div>
-
-          <div class="testimonial-grid">
-            <blockquote class="quote-card">
-              “The site immediately elevated our brand. We launched with more clarity, better messaging,
-              and a cleaner customer journey.”
-              <footer>
-                <strong>Maria Chen</strong>
-                <span>Founder, Northstar Studio</span>
-              </footer>
-            </blockquote>
-            <blockquote class="quote-card">
-              “Every detail felt intentional. The experience looked premium and the improvements in
-              conversions were noticeable within weeks.”
-              <footer>
-                <strong>Daniel Ross</strong>
-                <span>CEO, SignalFlow</span>
-              </footer>
-            </blockquote>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact-section" id="contact">
-        <div class="container contact-box">
+      <section class="contact-section" id="contact">
+        <div class="contact-box">
           <div>
-            <p class="eyebrow">Let’s connect</p>
-            <h2>Ready to turn your next idea into a standout digital experience?</h2>
+            <p class="eyebrow">Get in touch</p>
+            <h2>Let’s build something useful and memorable.</h2>
           </div>
 
           <form class="contact-form">
@@ -229,10 +232,10 @@
               <input type="email" name="email" placeholder="you@example.com" />
             </label>
             <label>
-              <span>Project details</span>
-              <textarea name="message" rows="4" placeholder="Tell us about your project"></textarea>
+              <span>Let’s talk about</span>
+              <textarea name="message" rows="4" placeholder="Project brief, role, or collaboration"></textarea>
             </label>
-            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+            <button type="submit" class="btn btn-primary">Send message</button>
           </form>
         </div>
       </section>
@@ -240,11 +243,11 @@
 
     <footer class="site-footer">
       <div class="container footer-row">
-        <p>© <span id="year"></span> Alok Creative. All rights reserved.</p>
+        <p>© <span id="year"></span> Alok Pandey</p>
         <div class="social-links" aria-label="Social links">
-          <a href="#">Instagram</a>
+          <a href="https://github.com/pandeyshivam4737-a11y" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="#">LinkedIn</a>
-          <a href="#">Behance</a>
+          <a href="#">Email</a>
         </div>
       </div>
     </footer>
